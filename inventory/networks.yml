@@ -1,0 +1,53 @@
+networks:
+
+  - name: GM-WAN
+    type: external
+    purpose: WAN
+ 
+  - name: GM-SRV
+    type: private
+    subnet: 10.0.10.0/24
+    gateway: 10.0.10.1
+    purpose: servers
+
+  - name: GM-IT
+    type: private
+    subnet: 10.0.20.0/24
+    gateway: 10.0.20.1
+    purpose: IT
+
+  - name: GM-HR
+    type: private
+    subnet: 10.0.30.0/24
+    gateway: 10.0.30.1
+    purpose: HR
+
+  - name: GM-SAL
+    type: private
+    subnet: 10.0.40.0/24
+    gateway: 10.0.40.1
+    purpose: Sales
+
+  - name: GM-MKT
+    type: private
+    subnet: 10.0.50.0/24
+    gateway: 10.0.50.1
+    purpose: Marketing
+
+  - name: GM-PXE
+    type: private
+    subnet: 10.0.60.0/24
+    gateway: 10.0.60.1
+    purpose: Deployment
+
+  - name: GM-ADMIN
+    type: internal
+    subnet: 10.0.70.0/24
+    gateway: 10.0.70.1
+    purpose: Administration
+
+  - name: GM-OSS
+    type: private
+    subnet: 10.0.80.0/24
+    gateway: 10.0.80.1
+    purpose: Open Source Software
