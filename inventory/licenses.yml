@@ -1,0 +1,19 @@
+---
+project: grand-machinato
+
+licenses:
+  - component: Windows host
+    status: pending-validation
+    evidence: null
+
+  - component: pfSense CE
+    status: pending-validation
+    evidence: null
+
+  - component: Windows Server
+    status: pending-validation
+    evidence: null
+
+  - component: Windows client
+    status: pending-validation
+    evidence: null

@@ -1,0 +1,58 @@
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Secrets and credentials
+*.key
+*.pem
+*.pfx
+*.p12
+*.cer
+*.crt
+*.secrets.*
+secrets/
+
+# Hyper-V runtime files and virtual disks
+*.vhd
+*.vhdx
+*.avhd
+*.avhdx
+*.vmcx
+*.vmrs
+*.vmgs
+*.bin
+*.vsv
+
+# Installation media
+*.iso
+*.img
+
+# Runtime output
+Logs/
+Staging/
+Restore/
+Backups/
+*.log
+*.tmp
+
+# Infrastructure state and plans
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+
+# PowerShell and test output
+TestResults/
+PesterResults.xml
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# WSL/Linux temporary files
+*~
+*.swp

@@ -1,0 +1,36 @@
+---
+project: grand-machinato
+
+host:
+  role: hypervisor
+  operating_system:
+    product: Windows 11 Pro
+    build: pending-inventory
+
+  hypervisor:
+    product: Hyper-V
+    status: enabled
+
+  hardware:
+    cpu:
+      model: pending-inventory
+      cores: pending-inventory
+      logical_processors: pending-inventory
+
+    memory:
+      installed_gb: 32
+
+    storage:
+      runtime_root_env: GM_ROOT
+      vm_root_env: GM_VM_ROOT
+      iso_root_env: GM_ISO_ROOT
+      capacity_gb: 1024
+      free_gb: pending-inventory
+
+  upstream_network:
+    selection: automatic-default-route
+    ipv4_network: 192.168.15.0/24
+    gateway: 192.168.15.1
+
+  lifecycle:
+    state: partially-inventoried

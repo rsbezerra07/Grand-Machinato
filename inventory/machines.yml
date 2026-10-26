@@ -1,0 +1,96 @@
+---
+project: grand-machinato
+
+machines:
+  - name: GM-FW01
+    role: firewall
+    platform: hyper-v
+    operating_system:
+      product: pfSense CE
+      release: pending
+      architecture: amd64
+
+    hardware:
+      generation: 2
+      processors: 2
+      memory:
+        startup_mb: 2048
+        dynamic: false
+      disks:
+        - name: OS
+          size_gb: 16
+          type: dynamic
+
+    firmware:
+      secure_boot: false
+
+    installation:
+      media_env: GM_PFSENSE_ISO
+
+    network_adapters:
+      - name: WAN
+        switch: GM-WAN
+        addressing:
+          mode: dhcp
+        mac_spoofing: false
+
+      - name: SRV
+        switch: GM-SRV
+        addressing:
+          ipv4: 10.0.10.1
+          prefix_length: 24
+        mac_spoofing: false
+
+      - name: IT
+        switch: GM-IT
+        addressing:
+          ipv4: 10.0.20.1
+          prefix_length: 24
+        mac_spoofing: false
+
+      - name: HR
+        switch: GM-HR
+        addressing:
+          ipv4: 10.0.30.1
+          prefix_length: 24
+        mac_spoofing: false
+
+      - name: SAL
+        switch: GM-SAL
+        addressing:
+          ipv4: 10.0.40.1
+          prefix_length: 24
+        mac_spoofing: false
+
+      - name: MKT
+        switch: GM-MKT
+        addressing:
+          ipv4: 10.0.50.1
+          prefix_length: 24
+        mac_spoofing: false
+
+      - name: PXE
+        switch: GM-PXE
+        addressing:
+          ipv4: 10.0.60.1
+          prefix_length: 24
+        mac_spoofing: false
+
+      - name: ADMIN
+        switch: GM-ADMIN
+        addressing:
+          ipv4: 10.0.70.1
+          prefix_length: 24
+        mac_spoofing: false
+
+      - name: OSS
+        switch: GM-OSS
+        addressing:
+          ipv4: 10.0.80.1
+          prefix_length: 24
+        mac_spoofing: false
+
+    lifecycle:
+      state: planned
+      phase: foundation
+      autostart: false

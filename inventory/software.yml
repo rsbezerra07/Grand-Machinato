@@ -1,0 +1,16 @@
+---
+project: grand-machinato
+
+software:
+  - id: pfsense-ce
+    product: pfSense CE
+    release: pending
+    architecture: amd64
+    format: iso
+    source: official
+    source_url: pending
+    local_path_env: GM_PFSENSE_ISO
+    sha256: pending
+    downloaded_at: pending
+    license_status: pending-validation
+    approved: false
