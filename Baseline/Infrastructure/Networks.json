@@ -1,0 +1,22 @@
+{
+  "Networks": [
+    {
+        "VMSwitchName": "GM_WAN_CORP",
+        "VMSwitchType": "External",
+        "AdapterName": "$Env:NetAdapterName",
+        "AllowManagementOS": "$true"
+    },
+    {
+        "VMSwitchName": "GM_ADMIN_CORP",
+        "VMSwitchType": "Internal"
+    },
+    {
+        "VMSwitchName": "GM_LAN_CORP",
+        "VMSwitchType": "Private"
+    },
+    {
+        "VMSwitchName": "GM_SYNC_CORP",
+        "VMSwitchType": "Private"
+    }
+  ]
+}
