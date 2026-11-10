@@ -48,6 +48,7 @@ Establishes the foundational directory, networking, and legacy deployment servic
 * **Identity & Core Network:** Windows Server Domain Controller (`AD DS`) managing identity, DNS resolution, DHCP scopes, and OU-based Group Policy Objects (GPOs).
 * **Legacy OS Deployment:** Automated Windows 10 provisioning via Windows Deployment Services (WDS) and Microsoft Deployment Toolkit (MDT) over VLAN 60.
 * **Baseline Software:** Automated installation of core utilities (Google Chrome and 7-Zip) alongside role-specific departmental applications.
+* **Enterprise Browser Governance:** Centralized configuration of Microsoft Edge and Google Chrome via ADMX Administrative Templates in the AD DS Central Store, enforcing security baselines, extension allowlists, and departmental bookmarks.
 * **Enterprise Storage:** Linux File Server integrated with Active Directory providing access-controlled network shares per department.
 
 ### Phase 2: Endpoint Management Modernization (MECM)
@@ -74,3 +75,9 @@ Completes architectural maturity by unifying on-premises and SaaS telemetry whil
 * **On-Premises Monitoring:** Deploys Zabbix and Grafana in VLAN 80 to collect local server metrics and pfSense SNMP network telemetry.
 * **SaaS Observability & APM:** Integrates Datadog Pro to centralize cloud telemetry, security log aggregation, and Application Performance Monitoring (APM) for the Azure PHP workloads.
 * **Multi-OS & Multi-Cloud Governance:** Enrolls a corporate Linux workstation and an AWS EC2 macOS instance into Microsoft Intune for cross-platform compliance and `.pkg` application deployment.
+
+---
+
+## Project Updates
+
+For a detailed history of new features, configuration changes, fixes, and infrastructure improvements, see the **[Grand-Machinato Changelog](./CHANGELOG.md)**
