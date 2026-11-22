@@ -45,16 +45,18 @@ This table maps the internal 802.1Q trunk networks routed by the pfSense HA clus
 
 Establishes the foundational directory, networking, and legacy deployment services for four corporate departments (IT, HR, Sales, and Marketing).
 
-* **Identity & Core Network:** Windows Server Domain Controller (`AD DS`) managing identity, DNS resolution, DHCP scopes, and OU-based Group Policy Objects (GPOs).
+* **Identity & Core Network:** Windows Server 2012 R2 Domain Controller (`AD DS`) managing identity, DNS resolution, DHCP scopes, and OU-based Group Policy Objects (GPOs).
 * **Legacy OS Deployment:** Automated Windows 10 provisioning via Windows Deployment Services (WDS) and Microsoft Deployment Toolkit (MDT) over VLAN 60.
 * **Baseline Software:** Automated installation of core utilities (Google Chrome and 7-Zip) alongside role-specific departmental applications.
 * **Enterprise Browser Governance:** Centralized configuration of Microsoft Edge and Google Chrome via ADMX Administrative Templates in the AD DS Central Store, enforcing security baselines, extension allowlists, and departmental bookmarks.
+* **Legacy Intranet:** Internal IIS website (`intranet.machinato.corp`) providing a centralized portal for departmental resources, IT support, and corporate announcements.
 * **Enterprise Storage:** Linux File Server integrated with Active Directory providing access-controlled network shares per department.
 
 ### Phase 2: Endpoint Management Modernization (MECM)
 
-Retires legacy WDS imaging in favor of centralized lifecycle management using Microsoft Endpoint Configuration Manager (MECM / SCCM) backed by SQL Server 2022.
+Retires legacy WDS imaging in favor of centralized lifecycle management using Microsoft Endpoint Configuration Manager (MECM / SCCM) backed by SQL Server 2025.
 
+* **Update Domain Controller(DC):** Upgrade the legacy Window Server 2012 R2 DC to Window Server 2025 for modern security and performance.
 * **Content & Patching:** Centralizes OS deployment and patching through a dedicated Distribution Point (DP) and Software Update Point (SUP/WSUS).
 * **Standardized Packaging:** Wraps enterprise applications using the PowerShell App Deployment Toolkit (PSADT) for standardized logging and installation prompts.
 * **OS Upgrade Rings:** Automates in-place upgrades migrating legacy Windows 10 endpoints to Windows 11 25H2 using phased task sequences.
@@ -65,6 +67,11 @@ Extends the on-premises infrastructure into Microsoft Cloud for modern identity,
 
 * **Hybrid Identity:** Synchronizes local Active Directory objects to Microsoft Entra ID via the Entra Cloud Sync agent on the Domain Controller.
 * **Co-Management & Autopilot:** Bridges MECM and Microsoft Intune for shared workload governance while provisioning cloud-native endpoints via Windows Autopilot.
+* **Zero-Trust Security:** Implements Microsoft Defender for Endpoint and Microsoft Defender for Identity to enforce endpoint compliance, threat detection, and lateral movement prevention.
+* **Hybrid Application Deployment:** Leverages Intune to deploy `.intunewin` packaged applications to co-managed and cloud-native endpoints
+* **Supporting Legacy Web Applications:** Uses Microsoft Admin Center Edge Administration to configure legacy intranet applications for modern browsers, ensuring compatibility and security, forcing websites to run in IE mode when necessary.
+* **Website Modernization:** Hosting Modern AI-made website on Azure App Service with HTTPS (Port 443).
+* **Sharepoint Online:** Start setup of Sharepoint Online for internal document management and collaboration.
 * **Hybrid Server Governance:** Onboards local servers to Azure Arc for centralized policy enforcement and automated patching via Azure Update Manager.
 * **Cloud Workloads:** Deploys two Azure VMs hosting the corporate e-commerce platform (WordPress) and ITSM system (GLPI), secured over HTTPS (Port 443) via an internal Root CA.
 
