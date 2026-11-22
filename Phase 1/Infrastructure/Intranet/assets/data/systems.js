@@ -1,0 +1,10 @@
+(function (ns) { ns.Data = ns.Data || {}; ns.Data.Systems = [
+{name:"Atlas Knowledge Portal",category:"Corporate",status:"Operational",checked:"2026-11-11 08:45",maintenance:"2026-11-21 21:00-22:00",team:"Knowledge Services",details:"Demonstration service operating normally."},
+{name:"Flow Requests",category:"Business Applications",status:"Maintenance",checked:"2026-11-11 08:40",maintenance:"2026-11-14 20:00-22:00",team:"Service Management",details:"Demonstration maintenance is scheduled."},
+{name:"Nexus Integration Gateway",category:"Integration",status:"Degraded",checked:"2026-11-11 08:42",maintenance:"None scheduled",team:"Platform Services",details:"Sample delayed processing for non-critical requests."},
+{name:"Corporate Email",category:"Collaboration",status:"Operational",checked:"2026-11-11 08:44",maintenance:"2026-11-28 22:00-23:00",team:"Digital Workplace",details:"Demonstration service operating normally."},
+{name:"Employee Directory",category:"Corporate",status:"Operational",checked:"2026-11-11 08:43",maintenance:"None scheduled",team:"Identity Services",details:"Static fictional directory available."},
+{name:"Remote Access",category:"Network",status:"Outage",checked:"2026-11-11 08:39",maintenance:"Under investigation",team:"Network Operations",details:"Demonstration outage; no real service is affected."},
+{name:"File Services",category:"Infrastructure",status:"Operational",checked:"2026-11-11 08:41",maintenance:"2026-11-16 19:00-20:00",team:"Platform Services",details:"Demonstration service operating normally."},
+{name:"Finance System",category:"Business Applications",status:"Unknown",checked:"2026-11-11 08:30",maintenance:"Pending owner confirmation",team:"Business Applications",details:"Static monitor sample has no current update."}
+]; }(window.GrandMachinato = window.GrandMachinato || {}));

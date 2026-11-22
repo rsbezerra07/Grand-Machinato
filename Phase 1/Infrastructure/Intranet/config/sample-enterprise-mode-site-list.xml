@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SAMPLE ONLY — NOT A PRODUCTION SITE LIST.
+  Replace the placeholder host/path, increment version after every published
+  change, host the final file at an approved HTTPS location, and validate it
+  with the applicable Microsoft Enterprise Mode Site List tooling.
+  The website cannot force IE mode; managed Edge browser policy applies it.
+-->
+<site-list version="1">
+  <created-by>
+    <tool>Grand Machinato sample configuration</tool>
+    <version>1.0</version>
+    <date-created>2026-11-11</date-created>
+  </created-by>
+  <!-- Standards-based IE11 document mode in Edge IE mode. -->
+  <site url="intranet.grandmachinato.example/legacy/">
+    <compat-mode>Default</compat-mode>
+    <open-in>IE11</open-in>
+  </site>
+</site-list>

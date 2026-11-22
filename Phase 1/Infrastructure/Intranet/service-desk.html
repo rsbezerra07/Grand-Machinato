@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Service Desk | Grand Machinato Intranet</title>
+<link rel="icon" href="assets/images/logo/favicon.ico">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/forms.css">
+<link rel="stylesheet" href="assets/css/tables.css">
+<link rel="stylesheet" href="assets/css/print.css" media="print">
+<!--[if IE]><link rel="stylesheet" href="assets/css/ie.css"><![endif]-->
+</head>
+<body data-page="service-desk.html">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="site-shell">
+<header id="site-header">
+  <div class="brand-row clearfix">
+    <a class="brand" href="index.html"><img src="assets/images/logo/logo-dark-bg.png" width="292" height="48" alt="Grand Machinato"></a>
+    <div class="header-meta"><span id="current-date">Date unavailable</span><span class="demo-badge">DEMONSTRATION INTRANET</span></div>
+  </div>
+  <div class="utility-row clearfix">
+    <ul class="utility-links"><li><a href="index.html">Home</a></li><li><a href="applications.html">Applications</a></li><li><a href="employee-directory.html">Employee Directory</a></li><li><a href="contact-support.html">IT Support</a></li><li><a href="knowledge-base.html">Help</a></li></ul>
+    <form id="global-search-form" class="global-search" action="search.html" method="get"><label for="global-search">Search intranet</label><input id="global-search" name="q" type="text" maxlength="80"><button type="submit">Search</button></form>
+  </div>
+</header>
+<button id="nav-toggle" class="nav-toggle" type="button" aria-controls="left-navigation" aria-expanded="false">Menu</button>
+<div class="page-body clearfix">
+  <nav id="left-navigation" class="left-navigation" aria-label="Primary navigation"><h2>Intranet</h2><ul><li><a href="index.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Home</a></li>
+<li><a href="news.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>News & Announcements</a></li>
+<li class="current"><a href="service-desk.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>IT Service Desk</a></li>
+<li><a href="system-status.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Systems Status</a></li>
+<li><a href="applications.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Applications</a></li>
+<li><a href="employee-directory.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Employee Directory</a></li>
+<li><a href="hr-resources.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>HR Resources</a></li>
+<li><a href="policies.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Policies & Procedures</a></li>
+<li><a href="forms-requests.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Forms & Requests</a></li>
+<li><a href="infrastructure.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Infrastructure</a></li>
+<li><a href="knowledge-base.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Knowledge Base</a></li>
+<li><a href="useful-links.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Useful Links</a></li>
+<li><a href="contact-support.html"><span class="nav-marker" aria-hidden="true">&#8250;</span>Contact IT</a></li></ul><div class="nav-help"><strong>Need help?</strong><a href="contact-support.html">Contact IT Support</a><span>Extension: XXXX</span></div></nav>
+  <div class="content-shell">
+    <div class="breadcrumbs" aria-label="Breadcrumbs"><a href="index.html">Home</a><span aria-hidden="true"> &gt; </span><span>IT Service Desk</span></div>
+    <main id="main-content" tabindex="-1">
+      <div class="page-heading"><h1>IT Service Desk</h1><span class="version-label">Static release 1.0</span></div>
+      <div class="warning"><strong>Static demonstration.</strong> This form validates and displays a review, but it cannot create a ticket.</div><div id="request-errors" class="error-summary" role="alert" aria-labelledby="request-errors-title"><h2 id="request-errors-title">Please correct the following</h2><ul id="request-error-list"></ul></div><section id="request-form-panel"><form id="request-form" action="service-desk.html" method="post" novalidate><fieldset><legend>Request details</legend>
+<div class="form-row"><label for="request-type">Request type <span class="required">*</span></label><select id="request-type" name="requestType"><option value="">Select</option><option>Incident</option><option>Service request</option><option>Security concern</option><option>Information request</option></select><span id="request-type-error" class="field-error"></span></div>
+<div class="form-row"><label for="request-category">Category <span class="required">*</span></label><select id="request-category" name="category"><option value="">Select</option><option>Account and access</option><option>Hardware</option><option>Software</option><option>Network</option><option>Email</option><option>Collaboration</option><option>Cloud services</option><option>Business application</option><option>Security concern</option><option>Other</option></select><span id="request-category-error" class="field-error"></span></div>
+<div class="form-row"><label for="short-description">Short description <span class="required">*</span></label><input id="short-description" name="shortDescription" type="text" maxlength="200"><span id="short-description-error" class="field-error"></span></div>
+<div class="form-row"><label for="detailed-description">Detailed description <span class="required">*</span></label><textarea id="detailed-description" name="detailedDescription" maxlength="2000"></textarea><span class="help-text">Do not enter passwords, secrets, personal data or real incident details.</span><span id="detailed-description-error" class="field-error"></span></div>
+<div class="form-row"><label for="business-impact">Business impact <span class="required">*</span></label><select id="business-impact" name="businessImpact"><option value="">Select</option><option>Individual</option><option>Team</option><option>Department</option><option>Organization</option></select><span id="business-impact-error" class="field-error"></span></div>
+<div class="form-row"><label for="urgency">Urgency <span class="required">*</span></label><select id="urgency" name="urgency"><option value="">Select</option><option>Low</option><option>Normal</option><option>High</option><option>Critical</option></select><span id="urgency-error" class="field-error"></span></div>
+<div class="form-row"><label for="contact-method">Preferred contact method <span class="required">*</span></label><select id="contact-method" name="contactMethod"><option value="">Select</option><option>Corporate email</option><option>Extension</option><option>Collaboration message</option></select><span id="contact-method-error" class="field-error"></span></div>
+<div class="form-row"><label for="affected-system">Affected system <span class="required">*</span></label><input id="affected-system" name="affectedSystem" type="text" maxlength="200"><span id="affected-system-error" class="field-error"></span></div>
+<div class="form-row"><label for="attachment">Attachment placeholder</label><input id="attachment" type="text" value="Attachments require a future secure backend" readonly><span class="help-text">File upload is intentionally disabled in this static release.</span></div></fieldset><p class="privacy-note">Privacy notice: enter fictional demonstration content only. A production service must provide approved privacy terms, secure transport, authorization, malware scanning and retention controls.</p><div class="actions"><button class="button" type="submit">Validate and review</button><button class="button button-light" type="reset">Clear</button></div></form></section>
+<section id="request-review" style="display:none"><h2>Review demonstration request</h2><dl id="review-values" class="review-block clearfix"></dl><div class="actions"><button id="edit-request" class="button button-light" type="button">Edit</button><button id="confirm-request" class="button" type="button">Confirm demonstration</button><button class="print-button button button-light" type="button">Print summary</button></div></section>
+<section id="request-confirmation" class="success" style="display:none"><strong>Validation complete</strong>This demonstration request has been validated successfully. No ticket was created because the static intranet is not connected to a service-management backend.</section>
+    </main>
+  </div>
+  
+</div>
+<footer id="site-footer"><span>Grand Machinato Corporate Intranet &mdash; Version 1.0</span><span>Support: extension XXXX &bull; support@example.invalid</span><span>All content is fictional demonstration material.</span></footer>
+</div>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/validation.js"></script>
+<script src="assets/js/service-desk.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+(function (ns) { ns.Data = ns.Data || {}; ns.Data.Employees = [
+{name:"Avery Calder",title:"Cloud Solutions Architect",department:"Cloud Services",office:"North Campus",extension:"X1420",email:"avery.calder@example.invalid",manager:"Morgan Vale",skills:"Azure architecture, migration, governance"},
+{name:"Blair Okafor",title:"Service Desk Analyst",department:"Information Technology",office:"Central Office",extension:"X2104",email:"blair.okafor@example.invalid",manager:"Emery Stone",skills:"Service management, Windows, support"},
+{name:"Casey Moreno",title:"Data Platform Engineer",department:"Data Platforms",office:"West Office",extension:"X3318",email:"casey.moreno@example.invalid",manager:"Riley Chen",skills:"SQL, data quality, integration"},
+{name:"Devon Iqbal",title:"Security Awareness Lead",department:"Information Security",office:"Central Office",extension:"X1841",email:"devon.iqbal@example.invalid",manager:"Jordan Pike",skills:"Security awareness, policy, risk"},
+{name:"Emery Stone",title:"IT Service Manager",department:"Information Technology",office:"Central Office",extension:"X2010",email:"emery.stone@example.invalid",manager:"Taylor Rowan",skills:"ITIL, operations, incident management"},
+{name:"Frankie Laurent",title:"People Operations Advisor",department:"People Operations",office:"North Campus",extension:"X4302",email:"frankie.laurent@example.invalid",manager:"Samira Holt",skills:"Onboarding, learning, workplace guidance"},
+{name:"Harper Nwosu",title:"Automation Consultant",department:"Automation",office:"West Office",extension:"X3521",email:"harper.nwosu@example.invalid",manager:"Morgan Vale",skills:"Workflow, scripting, process design"},
+{name:"Jordan Pike",title:"Director, Information Security",department:"Information Security",office:"North Campus",extension:"X1800",email:"jordan.pike@example.invalid",manager:"Taylor Rowan",skills:"Security strategy, risk, continuity"},
+{name:"Kai Andersen",title:"Integration Specialist",department:"Systems Integration",office:"Central Office",extension:"X2755",email:"kai.andersen@example.invalid",manager:"Riley Chen",skills:"APIs, middleware, systems integration"},
+{name:"Morgan Vale",title:"Head of Cloud and Automation",department:"Cloud Services",office:"North Campus",extension:"X1401",email:"morgan.vale@example.invalid",manager:"Taylor Rowan",skills:"Cloud strategy, automation, governance"},
+{name:"Riley Chen",title:"Data and Integration Manager",department:"Data Platforms",office:"West Office",extension:"X3300",email:"riley.chen@example.invalid",manager:"Taylor Rowan",skills:"Data platforms, integration, analytics"},
+{name:"Samira Holt",title:"People Operations Manager",department:"People Operations",office:"Central Office",extension:"X4300",email:"samira.holt@example.invalid",manager:"Taylor Rowan",skills:"People operations, policy, learning"}
+]; }(window.GrandMachinato = window.GrandMachinato || {}));

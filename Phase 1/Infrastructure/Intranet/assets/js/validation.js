@@ -1,0 +1,1 @@
+(function(window){"use strict";var GM=window.GrandMachinato=window.GrandMachinato||{};GM.Validation={required:function(value){return String(value||"").replace(/^\s+|\s+$/g,"").length>0;},max:function(value,n){return String(value||"").length<=n;}};}(window));
